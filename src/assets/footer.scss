@@ -1,0 +1,36 @@
+.footer{
+    background-color: #000;
+    color: rgb(110, 110, 110);
+    padding: 2rem 1rem;
+    font-size: 0.8rem;
+    .container{
+        max-width: 980px;
+        margin: 0 auto;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    &_social{      
+        margin-left: -.2rem;
+        padding: 1rem 0;
+        .footer_link{
+            margin-right: 1.2rem;
+            svg{
+                font-size: 2.2rem;
+            }
+        }
+    }
+    &_nav{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        .footer_navlink{
+            margin-bottom: 1.1rem;
+            flex: 1 0 50%;
+            @media screen and (min-width: 768px) {
+                flex: 1 0 25%;
+            }
+        }
+    }
+}

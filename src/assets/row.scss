@@ -1,0 +1,29 @@
+.row{
+    color: #FFF;
+    padding: 1rem 4%;
+    &_titre{
+        font-size: 1.7rem;
+        padding: 0 .5rem;
+    }
+    &_images{
+        display: flex;
+        align-items: center;
+        overflow-x: visible;
+        overflow-y: hidden;
+        width: 100%;
+        padding: .5rem 0;
+        .row_image{
+            width: 300px;
+            padding: .5rem;
+            transition: transform .3s;
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
+    }
+    ::-webkit-scrollbar {
+        display: none;
+        background-color: #111;
+    }
+}
